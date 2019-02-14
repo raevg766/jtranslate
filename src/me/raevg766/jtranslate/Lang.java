@@ -87,7 +87,7 @@ public class Lang {
 	}
 	
 	/**
-	 * Get the code of the language
+	 * Gets the code of the language
 	 * <p>Made for use by the java code!</p>
 	 * @return The code of the language
 	 * @author raevg766
@@ -98,7 +98,7 @@ public class Lang {
 	
 	
 	/**
-	 * Get the static translation associated with the specified key
+	 * Gets the static translation associated with the specified key
 	 * <p>Made for use by the java code!</p>
 	 * @param key The key to search for
 	 * @return The static translation of the specified key
@@ -111,7 +111,7 @@ public class Lang {
 	
 	
 	/**
-	 * Get the countable form of the word associated with the specified key
+	 * Gets the countable form of the word associated with the specified key
 	 * <p>Made for use by the java code!</p>
 	 * @param key The key to search for
 	 * @param num The number
@@ -191,7 +191,7 @@ public class Lang {
 	//prefferably for langfiles
 	
 	/**
-	 * Get the group value associated with the specified key
+	 * Gets the group value associated with the specified key
 	 * <p>Made for use by langfile scripts!</p>
 	 * @param key The key to search for
 	 * @param group The group name to search for

@@ -3,9 +3,9 @@ Adds translation capabilities to Java code
 
 Example use:
 
-ScriptEngineManager factory = new ScriptEngineManager();
+	ScriptEngineManager factory = new ScriptEngineManager();
 		
-		//can load langfile like this
+	//can load langfile like this
         Lang l=new Lang(factory, new FileInputStream("bg.langfile"));
         
         //or
@@ -29,7 +29,8 @@ ScriptEngineManager factory = new ScriptEngineManager();
         System.out.println(l.parseSentence("test_sentence_compound", new Object[] {"nmes", 2.3f, "nmail", 1}));
         System.out.println(l.parseSentence("test_sentence_compound", new Object[] {"nmes", 1, "nmail", 2.3}));
         
-        Example translation file:
+
+Example translation file:
         
         <lang code="en">
 	

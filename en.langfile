@@ -1,0 +1,34 @@
+<lang code="bg">
+	
+	<t key="greeting_hello">Hello!</t>
+	<t key="you_have">You have</t>
+	
+	<t key="new_message">
+		<g group="sg">new message</g>
+		<g group="pl">new messages</g>
+	</t>
+	
+	<t key="new_mail">
+		<g group="sg">new mail</g>
+		<g group="pl">new mails</g>
+	</t>
+	
+	<t key="test_sentence_simple" map_nmes="new_message">You have %nmes_val% %nmes%!</t>
+	<t key="test_sentence_compound" map_nmes="new_message" map_nmail="new_mail">You have %nmes_val% %nmes% and %nmail_val% %nmail%!</t>
+	
+	<t key="day">
+		<g group="sg">day</g>
+		<g group="pl">days</g>
+	</t>
+	
+	<script engine="nashorn">
+		<![CDATA[
+			
+			function countableForm(key, num){
+				if(num==1 || num==-1)return lang.getGroupValue(key, "sg");
+				else return lang.getGroupValue(key, "pl");
+			}
+			
+		]]>
+	</script>
+</lang>
